@@ -16,7 +16,7 @@ To run test cases => brownie test(Green means test cases are passed)
 
 To run test one by one => brownie test -k test_function_name --network development(or any testnet or mainnet)
 
-To use mainnet-fork blockchain as local(Copy of a real network) => brownie networks add development mainnet-fork-dev cmd=ganache-cli host=http://127.0.0.1:7545 fork=https://eth-mainnet.alchemyapi.io/v2/1Ud_98XjGfaUjHso53oca-91uzFQr8nx accounts=10 mnemonic=brownie port=8545
+To use mainnet-fork blockchain as local(Copy of a real network) => brownie networks add development mainnet-fork-dev cmd=ganache-cli host=http://127.0.0.1:7545 fork=https://eth-mainnet.alchemyapi.io/v2/{your api key} accounts=10 mnemonic=brownie port=8545
 
 **//**After that => brownie run scripts/deploy.py --network mainnet-fork-dev
 
